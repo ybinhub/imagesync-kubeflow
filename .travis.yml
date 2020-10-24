@@ -21,9 +21,9 @@ script:
       image_tag=`echo $image | awk -F '/' '{print $NF}' | awk -F ':' '{print $2}'`
       image_tag=`echo $image | awk -F '/' '{print $NF}' | awk -F '@' '{print $2}'`
       docker pull $image
-      docker tag $image $ALI_REGISTRY/$image_name
+      docker tag $image $ALI_REGISTRY/$image_name:$image_tag
     	
       # push到阿里云仓库
-      docker push $ALI_REGISTRY/$image_name
+      docker push $ALI_REGISTRY/$image_name:$image_tag
     done
 
