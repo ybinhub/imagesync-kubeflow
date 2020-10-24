@@ -18,12 +18,10 @@ script:
     do
       image_name=${image##*/}
       image_name=${image_name%@*}
-      image_tag=`echo $image | awk -F '/' '{print $NF}' | awk -F ':' '{print $2}'`
-      image_tag=`echo $image | awk -F '/' '{print $NF}' | awk -F '@' '{print $2}'`
       docker pull $image
-      docker tag $image $ALI_REGISTRY/$image_name:$image_tag
+      docker tag $image $ALI_REGISTRY/$image_name
     	
       # push到阿里云仓库
-      docker push $ALI_REGISTRY/$image_name:$image_tag
+      docker push $ALI_REGISTRY/$image_name
     done
 
