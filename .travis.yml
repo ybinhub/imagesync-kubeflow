@@ -9,7 +9,7 @@ env:
     - ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinkubeflow
 
 before_script:
-  - docker login --username=2740780211@qq.com --password=18235441792nyb $ALI_REGISTRY
+  - docker login --username=$ALI_USERNAME --password=$ALI_PASSWORD $ALI_REGISTRY
  
 script:
   - echo "start pull and retag and push"
