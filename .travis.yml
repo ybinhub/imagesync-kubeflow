@@ -6,8 +6,8 @@ services:
 env:
   global:
     # change the registry name and username/password to yourself's.
-    #- ALI_REGISTRY=registry.cn-hongkong.aliyuncs.com/ybinkubeflow
-    - ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinkubeflow
+    #- ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinkubeflow
+    - ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinistio
 
 before_script:
   - docker login --username=$ALI_USERNAME --password=$ALI_PASSWORD $ALI_REGISTRY
