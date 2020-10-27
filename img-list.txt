@@ -1,11 +1,1 @@
-docker.io/istio/kubectl:1.1.6
-docker.io/istio/galley:1.1.6
-docker.io/istio/proxyv2:1.1.6
-docker.io/istio/mixer:1.1.6
-docker.io/istio/pilot:1.1.6
-docker.io/istio/citadel:1.1.6
-docker.io/istio/sidecar_injector:1.1.6
-docker.io/jaegertracing/all-in-one:1.9
-docker.io/prom/prometheus:v2.3.1
-grafana/grafana:6.0.2
-docker.io/kiali/kiali:v0.16
+gcr.io/istio-release/node-agent-k8s:release-1.3-latest-daily
