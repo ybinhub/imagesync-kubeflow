@@ -62,3 +62,5 @@ gcr.io/istio-release/kubectl:release-1.3-latest-daily
 gcr.io/kubeflow-images-public/tf_operator:vmaster-ga2ae7bff
 gcr.io/spark-operator/spark-operator:v1beta2-1.1.0-2.4.5
 gcr.io/kubeflow-images-public/pytorch-operator:vmaster-gd596e904
+gcr.io/kubeflow-images-public/notebook-controller:vmaster-gf39279c0
+gcr.io/kubeflow-images-public/admission-webhook:vmaster-gaf96e4e3
