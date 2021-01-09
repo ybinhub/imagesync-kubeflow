@@ -6,8 +6,7 @@ services:
 env:
   global:
     # change the registry name and username/password to yourself's.
-    - ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/k8s-v1_13_3
-    #- ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinkubeflow
+    - ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinkubeflow
     #- ALI_REGISTRY=registry.cn-hangzhou.aliyuncs.com/ybinistio
 
 before_script:
